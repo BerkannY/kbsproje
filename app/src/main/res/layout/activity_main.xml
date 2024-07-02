@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="247dp"
+            android:layout_height="104dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="73dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="KBS"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="Kursiyer Bilgi Sistemi"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="329dp"
+            android:layout_height="156dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="353dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addCoursiers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToAddCoursiers"
+                android:text="Kursiyer Ekle" />
+
+            <Button
+                android:id="@+id/listCoursiers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToListCoursiers"
+                android:text="Kursiyerleri Listele" />
+
+            <Button
+                android:id="@+id/deleteCoursier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToDeleteCoursier"
+                android:text="Kursiyer Sil" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
